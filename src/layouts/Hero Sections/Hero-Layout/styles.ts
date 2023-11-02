@@ -36,6 +36,7 @@ export const InfoDiv = styled(TitleDiv)`
 `
 
 export const H2 = styled.h2`
+    font-size: 2.2rem;
     margin: 0, auto, 1.2rem;
 `
 

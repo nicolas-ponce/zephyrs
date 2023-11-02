@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 export const DIV = styled.div`
-    display: flex;
-    justify-content: center;
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: .2rem;
+    padding: 0 .8rem;
 `

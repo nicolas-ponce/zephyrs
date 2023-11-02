@@ -1,5 +1,6 @@
 import { ProductCard } from "../../../components/Product/ProductCard";
 import { watches } from "../../../data/watches";
+import { DIV } from "./styles";
 
 
 
@@ -9,17 +10,18 @@ export const ProductsLayout = () => {
 
   return (
     <>
-      {
-        watches.map((watch) => {
+    <DIV>
+    {
+        watches.map((watch) => (
           <ProductCard
             key={watch.id}
+            img={watch.img}
+            id={watch.id}
             name={watch.name}
             price={watch.price}
-            description={watch.description}
-            img={watch.img} id={0}
-            />
-        })
+            description={watch.description} />))
       }
+    </DIV>
 
     </>
   );

@@ -1,3 +1,4 @@
+import { Card, SeeMoreBtn, WatchImg, WatchName } from "./styles";
 
 
 type Props = {
@@ -10,11 +11,10 @@ type Props = {
 
 export const ProductCard = (props: Props) => {
   return (
-    <div key={props.id}>
-        <img src={props.img}></img>
-        <p>{props.name}</p>
-        <p>{props.price}</p>
-        <p>{props.description}</p>
-    </div>
+    <Card>
+        <WatchImg src={props.img}></WatchImg>
+        <WatchName>{props.name}</WatchName>
+        <SeeMoreBtn href="#">See More</SeeMoreBtn>
+    </Card>
   )
 }

@@ -3,6 +3,7 @@
   --brown: #AB987A;
   --orange: #FF5330;
   --white: #F5F5F5;
+  --black: #121212;
 
   --primaryFont: 'Josefin Sans', sans-serif; /* 200, 400, 700 */
   --secondaryFont: 'Crimson Text', serif; /* 400 */
@@ -39,10 +40,14 @@ h1 {
 }
 
 h2 { 
-  font-size: 2.2rem;
+  font-size: 6.180rem;
   font-family: var(--primaryFont);
   font-weight: 400;
   text-transform: uppercase;
+}
+
+h3 {
+  font-size: 3.2rem;
 }
 
 p {
