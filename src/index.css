@@ -32,11 +32,24 @@ body {
   padding: 0;
 }
 
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+p::selection,
+a::selection,
+button::selection {
+  color: var(--orange);
+}
+
 h1 {
   font-size: 10rem;
   line-height: 1.1;
   font-family: var(--primaryFont);
   font-weight: 400;
+  letter-spacing: -.4rem;
 }
 
 h2 { 
@@ -53,6 +66,14 @@ h3 {
 p {
   font-size: 1.8rem;
   font-family: var(--secondaryFont);
+}
+
+a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: var(--white);
+  font-family: var(--secondaryFont);
+  letter-spacing: .2rem;
 }
 
 img {

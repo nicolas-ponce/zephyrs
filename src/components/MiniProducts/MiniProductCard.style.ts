@@ -13,7 +13,7 @@ const AppearBtn = keyframes`
     from {
         color: rgba(0,0,0,0);
     } to {
-        color: white;
+        color: var(--white);
     }
 `
 
@@ -22,7 +22,7 @@ export const WatchName = styled.p`
     width: 100%;
     padding: 1.2rem 0;
     margin: 0 auto;
-    color: white;
+    color: var(--white);
     align-self: flex-end;
     justify-content: center;
     text-transform: uppercase;
@@ -46,6 +46,18 @@ export const SeeMoreBtn = styled.a`
     letter-spacing: .3rem;
 `
 
+export const WatchImg = styled.img`
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -10;
+    filter: grayscale(0%);
+    transition: all 1.2s;
+`
+
+
 export const Card = styled.div`
     position: relative;
     display: flex;
@@ -53,7 +65,7 @@ export const Card = styled.div`
     justify-content: space-between;
     overflow: hidden;
     cursor: pointer;
-    border: 1px solid black;
+    border: 1px solid var(--black);
     transition: all 0.2s;
 
     &:hover {
@@ -67,14 +79,11 @@ export const Card = styled.div`
         & ${SeeMoreBtn} {
             animation: ${AppearBtn} .8s .4s ease-in-out forwards;
         }
+
+        & ${WatchImg} {
+            filter: grayscale(100%);
+        }
     }
 `;
 
-export const WatchImg = styled.img`
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -10;
-`
+

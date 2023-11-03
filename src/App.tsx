@@ -1,12 +1,12 @@
 import './App.css'
-import { HomeLayout } from './layouts/Home-Layout/Home-Layout'
+import { HomeScreen } from './screens/Home_Screen/Home_screen'
 
 
 
 function App() {
   return (
     <>
-      <HomeLayout />
+      <HomeScreen />
     </>
   )
 }

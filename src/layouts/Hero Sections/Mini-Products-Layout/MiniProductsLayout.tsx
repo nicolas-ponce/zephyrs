@@ -1,19 +1,19 @@
-import { ProductCard } from "../../../components/Product/ProductCard";
+import { MiniProductCard } from "../../../components/MiniProducts/MiniProductCard";
 import { watches } from "../../../data/watches";
-import { DIV } from "./styles";
+import { DIV } from "./MiniProductsLayout.style";
 
 
 
 
 
-export const ProductsLayout = () => {
+export const MiniProductsLayout = () => {
 
   return (
     <>
     <DIV>
     {
         watches.map((watch) => (
-          <ProductCard
+          <MiniProductCard
             key={watch.id}
             img={watch.img}
             id={watch.id}

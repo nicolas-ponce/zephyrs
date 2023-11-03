@@ -1,5 +1,5 @@
 import watchGuy from '../../../assets/watch-guy.svg';
-import { H1, Section, TitleDiv, SubtitleP, InfoDiv, H2, Text } from './styles'
+import { H1, Section, TitleDiv, SubtitleP, InfoDiv, H2, Text } from './HeroLayout.style'
 
 export const HeroLayout = () => {
   return (
