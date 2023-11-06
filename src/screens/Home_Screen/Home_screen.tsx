@@ -4,6 +4,7 @@ import { MiniProductsLayout } from '../../layouts/Hero Sections/Mini-Products-La
 import { ProductsLayout } from '../../layouts/Products_Layout/ProductsLayout'
 import { HEADER, MAIN } from './HomeScreen.style'
 import { FAQLayout } from '../../layouts/FAQ_Layout/FAQLayout'
+import { AboutUsLayout } from '../../layouts/AboutUs_Layout/AboutUsLayout'
 
 
 export const HomeScreen = () => {
@@ -16,12 +17,9 @@ export const HomeScreen = () => {
       <HEADER>
         <NavBarLayout />
       </HEADER>
-      <section>
         <ProductsLayout />
-      </section>
-      <section>
         <FAQLayout />
-      </section>
+        <AboutUsLayout />
     </>
 
   )
