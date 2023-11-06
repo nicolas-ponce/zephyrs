@@ -1,4 +1,4 @@
-import { OverlayTitle, Container, InfoBox, WatchmakerImg, TextBox, TextLine } from "./AboutusLayout.style"
+import { OverlayTitle, Container, InfoBox, WatchmakerImg, TextBox, TextLine } from "./AboutUsLayout.style"
 import watchmaker from "../../assets/images/watchmaker.jpg"
 
 

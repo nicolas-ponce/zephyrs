@@ -8,10 +8,11 @@ export const NavBar = styled.nav`
     width: 90%;
     margin: 0 auto;
     padding: 2rem 0;
+    height: 6rem;
 `
 
 export const H3 = styled.h3`
-    margin: 0;
+    margin: .8rem 0 0;
 `
 
 export const LinkList = styled.div`
