@@ -31,6 +31,13 @@ export const WatchmakerImg = styled.img`
 
 export const TextBox = styled.div`
     margin: 15rem auto 0;
+
+    & span {
+        color: var(--orange);
+    }
+    & span::selection {
+        color: #ffd700;
+    }
 `
 
 export const TextLine = styled.p`

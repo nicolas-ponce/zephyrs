@@ -5,6 +5,7 @@ import { ProductsLayout } from '../../layouts/Products_Layout/ProductsLayout'
 import { HEADER, MAIN } from './HomeScreen.style'
 import { FAQLayout } from '../../layouts/FAQ_Layout/FAQLayout'
 import { AboutUsLayout } from '../../layouts/AboutUs_Layout/AboutUsLayout'
+import { FooterLayout } from '../../layouts/Footer_Layout/FooterLayout'
 
 
 export const HomeScreen = () => {
@@ -20,6 +21,7 @@ export const HomeScreen = () => {
         <ProductsLayout />
         <FAQLayout />
         <AboutUsLayout />
+        <FooterLayout />
     </>
 
   )

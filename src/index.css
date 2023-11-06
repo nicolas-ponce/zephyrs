@@ -43,7 +43,8 @@ h5::selection,
 h6::selection,
 p::selection,
 a::selection,
-button::selection {
+button::selection,
+img::selection {
   color: var(--orange);
 }
 
@@ -66,6 +67,10 @@ h3 {
   font-size: 4.8rem;
   font-family: var(--primaryFont);
   font-weight: 400;
+}
+
+h4 {
+  font-size: 3.6rem;
 }
 
 p {
