@@ -7,6 +7,7 @@ export const NavBarLayout = () => {
         <LinkList>
             <Anchor href='#'>Home</Anchor>
             <Anchor href='#'>Products</Anchor>
+            <Anchor href='#'>FAQ</Anchor>
             <Anchor href='#'>About Us</Anchor>
             <Anchor href='#'>Contact</Anchor>
         </LinkList>

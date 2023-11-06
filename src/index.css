@@ -60,7 +60,9 @@ h2 {
 }
 
 h3 {
-  font-size: 3.2rem;
+  font-size: 4.8rem;
+  font-family: var(--primaryFont);
+  font-weight: 400;
 }
 
 p {

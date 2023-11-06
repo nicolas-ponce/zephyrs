@@ -34,7 +34,8 @@ export const ProductDiv = styled.div`
 
 
 export const Name = styled.h3`
-    margin: 1.2rem auto 0;
+    margin: 2.4rem auto 0;
+    font-size: 3.6rem;
 `
 
 
