@@ -157,6 +157,7 @@ export const IconsContainer = styled.div`
         @media (max-width: 768px) {
             bottom: -40%;
         }
+        
     }
 `
 
