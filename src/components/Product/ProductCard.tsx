@@ -1,5 +1,5 @@
-import { AddToCartBtn } from '../AddToCart_Button/AddToCartBtn';
-import { SeeProductBtn } from '../SeeProduct_Button/SeeProductBtn';
+import { AddToCartBtn } from '../Buttons/AddToCart_Button/AddToCartBtn';
+import { SeeProductBtn } from '../Buttons/SeeProduct_Button/SeeProductBtn';
 import { Description, Name, Price, PriceNBtn, ProductDiv, ProductImg } from './ProductCard.style';
 
 type Props = {

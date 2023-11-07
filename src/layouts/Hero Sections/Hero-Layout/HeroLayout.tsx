@@ -1,4 +1,5 @@
 import watchGuy from '../../../assets/watch-guy.svg';
+import { ScrollDownLine } from '../../../components/ScrollDownLine/ScrollDownLine';
 import { H1, Section, TitleDiv, SubtitleP, InfoDiv, H2, Text } from './HeroLayout.style'
 
 export const HeroLayout = () => {
@@ -14,6 +15,7 @@ export const HeroLayout = () => {
             <Text>Raise your wrist and show the world who you are</Text>
         </InfoDiv>
         <img src={watchGuy} alt="" />
+        <ScrollDownLine />
     </Section>
   )
 }

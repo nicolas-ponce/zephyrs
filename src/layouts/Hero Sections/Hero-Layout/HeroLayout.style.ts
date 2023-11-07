@@ -31,7 +31,7 @@ export const H1 = styled.h1`
 
     @media (max-width: 480px) {
         font-size: 6.8rem;
-        margin: -10rem auto .4rem;
+        margin: -15rem auto .4rem;
     }
 `
 
@@ -48,7 +48,7 @@ export const InfoDiv = styled(TitleDiv)`
 
     @media (max-width: 480px) {
         width: 90%;
-        margin-bottom: 7.2rem;
+        margin: -2rem auto 2rem;
     }
 `
 
