@@ -6,4 +6,14 @@ export const ProductGrid = styled.div`
     gap: 4.4rem;
     width: 90%;
     margin: 2.4rem auto;
+
+    @media (max-width: 992px) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.8rem;
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.8rem;
+    }
 `

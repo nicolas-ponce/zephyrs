@@ -42,7 +42,7 @@ export const FooterLayout = () => {
                     <img src={reactIcon} alt="React Icon"></img>
                     <img src={typescriptIcon} alt="Typescript Icon"></img>
                 </IconsImgs>
-                <p>®All Rights Reserved. Nicolás Ponce.</p>
+                <p>®All Rights Reserved. 2023. Nicolás Ponce.</p>
                 <h3>U</h3>
             </IconsContainer>
         </InfoBox>

@@ -25,6 +25,11 @@ export const ProductDiv = styled.div`
     &:hover {
         outline: var(--white) solid 1px;
     }
+
+
+    @media (max-width: 768px) {
+        height: 53rem;
+    }
 `
 
 
@@ -35,12 +40,22 @@ export const ProductDiv = styled.div`
 
 export const Name = styled.h4`
     margin: 2.4rem auto 0;
+
+    @media (max-width: 768px) {
+        margin: .8rem auto 0;
+        font-size: 3.6rem;
+    }
 `
 
 
 export const Description = styled.p`
     font-size: 1.4rem;
     width: 90%;
+
+    @media (max-width: 768px) {
+        margin: 0 auto 0;
+        font-size: 1.2rem;
+    }
 `
 
 

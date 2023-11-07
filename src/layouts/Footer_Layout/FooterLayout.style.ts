@@ -43,6 +43,10 @@ export const InfoBox = styled.div`
     gap: 4rem;
     width: 90%;
     margin: 12rem auto;
+
+    @media (max-width: 768px) {
+        gap: 2.8rem;
+    }
 `
 
 
@@ -55,6 +59,14 @@ export const QuoteContainer = styled.div`
 export const Quote = styled.h4`
     font-size: 2.4rem;
     margin: 0;
+
+    @media (max-width: 992px) {
+        font-size: 2rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 1.8rem;
+    }
 `
 
 export const Quoter = styled.p`
@@ -77,6 +89,10 @@ export const LinksColumn = styled.div`
     & p {
         font-size: 2.4rem;
         margin: 0;
+
+        @media (max-width: 992px) {
+            font-size: 1.8rem;
+        }
     }
 `
 
@@ -90,6 +106,10 @@ export const AnchorsList = styled.div`
         color: var(--white);
         filter: opacity(50%);
         transition: filter .1s;
+
+        @media (max-width: 992px) {
+            font-size: 1.2rem
+        }
     }
     & a:hover {
         filter: opacity(100%);
@@ -104,15 +124,39 @@ export const IconsContainer = styled.div`
     justify-content: space-between;
     align-items: center;
 
+    @media (max-width: 768px) {
+            justify-content: space-around;
+        }
+
+
     & p {
         font-size: 1.4rem;
+
+        @media (max-width: 992px) {
+            font-size: 1rem;
+        }
     }
-    & h3 {
+    & h3 { // Lengua
         font-family: var(--primaryFont);
         position: absolute;
         bottom: -55%;
         right: 30%;
         color: #ba6b72;
+
+
+
+        @media (max-width: 992px) {
+            right: 25%;
+            bottom: -62%;
+        }
+
+        @media (max-width: 834px) { //Mostly Fluid
+            bottom: -55%;
+        }
+
+        @media (max-width: 768px) {
+            bottom: -40%;
+        }
     }
 `
 

@@ -7,4 +7,8 @@ export const DIV = styled.div`
     grid-template-rows: repeat(3, 1fr);
     gap: .2rem;
     padding: 0 .8rem;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 `

@@ -21,6 +21,10 @@ export const TitleDiv = styled.div`
 
 export const H1 = styled.h1`
     margin: 0;
+
+    @media (max-width: 992px) {
+        font-size: 8rem;
+    }
 `
 
 export const SubtitleP = styled.p`
@@ -36,12 +40,20 @@ export const InfoDiv = styled(TitleDiv)`
 `
 
 export const H2 = styled.h2`
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     margin: 0, auto, 1.2rem;
+
+    @media (max-width: 992px) {
+        font-size: 2rem;
+    }
 `
 
 
 export const Text = styled.p`
     width: 80%;
     margin: 0;
+
+    @media (max-width: 992px) {
+        font-size: 1.6rem;
+    }
 `

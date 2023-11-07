@@ -8,7 +8,6 @@ export const BoxContainer = styled.div`
     gap: 2rem;
     width: 90%;
     margin: 8rem auto 4rem;
-
 `
 
 export const Title = styled.h3`
