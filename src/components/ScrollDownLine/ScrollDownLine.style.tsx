@@ -5,7 +5,7 @@ export const ScrollContainer = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 30%;
+    width: 25%;
     position: absolute;
     bottom: 5%;
     rotate: 90deg;
