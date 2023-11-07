@@ -1,4 +1,5 @@
 import { AddToCartBtn } from '../AddToCart_Button/AddToCartBtn';
+import { SeeProductBtn } from '../SeeProduct_Button/SeeProductBtn';
 import { Description, Name, Price, PriceNBtn, ProductDiv, ProductImg } from './ProductCard.style';
 
 type Props = {
@@ -17,6 +18,7 @@ export const ProductCard = (props: Props) => {
         <Description>{props.description}</Description>
         <PriceNBtn>
             <Price>US$ {props.price}</Price>
+            <SeeProductBtn />
             <AddToCartBtn />
         </PriceNBtn>
     </ProductDiv>

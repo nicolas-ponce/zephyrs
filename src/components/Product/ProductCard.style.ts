@@ -30,6 +30,10 @@ export const ProductDiv = styled.div`
     @media (max-width: 768px) {
         height: 53rem;
     }
+
+    @media (max-width: 480px) {
+        height: fit-content;
+    }
 `
 
 
@@ -45,6 +49,10 @@ export const Name = styled.h4`
         margin: .8rem auto 0;
         font-size: 3.6rem;
     }
+
+    @media (max-width: 480px) {
+        font-size: 2rem;
+    }
 `
 
 
@@ -55,6 +63,10 @@ export const Description = styled.p`
     @media (max-width: 768px) {
         margin: 0 auto 0;
         font-size: 1.2rem;
+    }
+
+    @media (max-width: 480px) {
+        display: none;
     }
 `
 
@@ -69,10 +81,22 @@ export const PriceNBtn = styled.div`
     align-items: center;
     margin: 0 auto 1.8rem;
     width: 80%;
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+        position: relative;
+    }
 `
 
 
 export const Price = styled.p`
     justify-self: flex-end;
     align-self: flex-end;
+
+    @media (max-width: 480px) {
+        justify-self: center;
+        align-self: center;
+        font-size: 1.4rem;
+        margin: 0 auto;
+    }
 `

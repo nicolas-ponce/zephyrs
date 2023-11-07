@@ -13,6 +13,10 @@ export const NavBar = styled.nav`
 
 export const H3 = styled.h3`
     margin: .8rem 0 0;
+
+    @media (max-width: 480px) {
+        font-size: 3.6rem;
+    }
 `
 
 export const LinkList = styled.div`
@@ -70,6 +74,11 @@ export const Hamburger = styled.div`
 
     @media (max-width: 768px) {
         display: flex;
+    }
+
+    @media (max-width: 480px) {
+        width: 4rem;
+        height: 2.4rem;
     }
 `
 

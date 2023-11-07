@@ -7,6 +7,10 @@ export const Container = styled.div`
     width: 100%;
     height: 35rem;
     overflow: hidden;
+
+    @media (max-width: 480px) {
+        height: 48rem;
+    }
 `
 
 
@@ -19,6 +23,9 @@ export const BlackBackground = styled.div`
     background-color: var(--black);
     rotate: 3deg;
     z-index: -5;
+    @media (max-width: 480px) {
+        height: 48rem;
+    }
 `
 
 export const BrownBackground = styled.div`
@@ -30,6 +37,11 @@ export const BrownBackground = styled.div`
     background-color: var(--brown);
     rotate: -2deg;
     z-index: -10;
+
+    @media (max-width: 480px) {
+        width: 250%;
+        top: 4rem;
+    }
 `
 
 
@@ -47,6 +59,12 @@ export const InfoBox = styled.div`
     @media (max-width: 768px) {
         gap: 2.8rem;
     }
+
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin: 8rem auto;
+    }
 `
 
 
@@ -54,6 +72,10 @@ export const QuoteContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+
+    @media (max-width: 480px) {
+        gap: .4rem;
+    }
 `
 
 export const Quote = styled.h4`
@@ -67,12 +89,22 @@ export const Quote = styled.h4`
     @media (max-width: 768px) {
         font-size: 1.8rem;
     }
+
+    @media (max-width: 480px) {
+        font-size: 1.4rem;
+    }
 `
 
 export const Quoter = styled.p`
     margin: 0 4rem;
     text-align: right;
+
+    @media (max-width: 480px) {
+        margin: 0 2rem;
+        font-size: 1.4rem;
+    }
 `
+
 
 
 export const LinksContainer = styled.div`
@@ -85,6 +117,13 @@ export const LinksColumn = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+
+
+
+    @media (max-width: 480px) {
+        gap: .8rem;
+        align-items: center;
+    }
 
     & p {
         font-size: 2.4rem;
@@ -101,6 +140,11 @@ export const AnchorsList = styled.div`
     flex-direction: column;
     gap: .4rem;
 
+    @media (max-width: 480px) {
+        align-items: center;
+        gap: .8rem;
+    }
+
     & a {
         font-size: 1.4rem;
         color: var(--white);
@@ -110,10 +154,15 @@ export const AnchorsList = styled.div`
         @media (max-width: 992px) {
             font-size: 1.2rem
         }
+
+        @media (max-width: 480px) {
+        }
     }
     & a:hover {
         filter: opacity(100%);
     }
+
+
 `
 
 
@@ -128,6 +177,9 @@ export const IconsContainer = styled.div`
             justify-content: space-around;
         }
 
+    @media (max-width: 480px) {
+        gap: 2rem;
+    }
 
     & p {
         font-size: 1.4rem;
@@ -157,6 +209,11 @@ export const IconsContainer = styled.div`
         @media (max-width: 768px) {
             bottom: -40%;
         }
+
+        @media (max-width: 480px) {
+            bottom: -95%;
+            right: 30%;
+        }
         
     }
 `
@@ -170,5 +227,9 @@ export const IconsImgs = styled.div`
 
     & img {
         width: 4.8rem;
+
+        @media (max-width: 480px) {
+            width: 4rem;
+        }
     }
 `

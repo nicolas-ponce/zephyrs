@@ -12,4 +12,9 @@ export const BoxContainer = styled.div`
 
 export const Title = styled.h3`
     margin: 0;
+
+    @media (max-width: 480px) {
+        font-size: 3.2rem;
+        text-align: center;
+    }
 `

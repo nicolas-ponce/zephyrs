@@ -17,6 +17,13 @@ export const Box = styled.div`
     @media (max-width: 992px) {
         width: 90%;
     }
+
+    @media (max-width: 768px) {
+        padding: 2rem 2rem;
+    }
+
+    @media (max-width: 480px) {
+    }
 `
 
 export const QuestionLine = styled.div`
@@ -25,6 +32,10 @@ export const QuestionLine = styled.div`
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
+
+    @media (max-width: 480px) {
+        gap: .8rem;
+    }
 `
 
 export const Question = styled.h4`
@@ -33,6 +44,10 @@ export const Question = styled.h4`
 
     @media (max-width: 768px) {
         font-size: 2rem;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1.6rem;
     }
 `
 
@@ -50,5 +65,9 @@ export const Answer = styled.p`
 
     @media (max-width: 768px) {
         font-size: 1.6rem;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1.3rem;
     }
 `

@@ -5,11 +5,19 @@ import styled from "styled-components";
 export const ShoppingCartImg = styled.img`
     width: 25%;
     margin: 0;
+
+    @media (max-width: 480px) {
+        width: 18%;
+    }
 `
 
 export const Text = styled.p`
     margin: 0;
     font-size: 1.4rem;
+
+    @media (max-width: 480px) {
+        font-size: 1.2rem;
+    }
 `
 
 export const Button = styled.button`
@@ -31,6 +39,11 @@ export const Button = styled.button`
         transition: all .2s;
         background-color: var(--blue);
         color: var(--brown);
-        border: 1px solid var(--brown);
+        outline: var(--brown) solid 1px;
+    }
+
+    @media (max-width: 480px) {
+        width: 100%;
+        padding: .4rem .8rem;
     }
 `

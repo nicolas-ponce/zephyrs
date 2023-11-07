@@ -36,8 +36,16 @@ export const OverlayTitle = styled.h3`
     }
 
     @media (max-width: 768px) {
-        font-size: 7.2rem;
+        font-size: 6rem;
         left: 24%;
+    }
+
+    @media (max-width: 480px) {
+        position: relative;
+        top: 0;
+        left: 0;
+        font-size: 4.8rem;
+        text-align: center;
     }
 `
 
@@ -54,11 +62,24 @@ export const InfoBox = styled.div`
     @media (max-width: 768px) {
         gap: 3.2rem;
     }
+
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+        margin-top: 2rem;
+        gap: 0;
+    }
 `
 
 export const WatchmakerImg = styled.img`
     width: 90%;
     margin: 0 auto;
+    
+    @media (max-width: 480px) {
+        height: 16rem;
+        object-fit: cover;
+        width: 100%;
+        border-radius: .4rem;
+    }
 `
 
 export const TextBox = styled.div`
@@ -79,6 +100,10 @@ export const TextBox = styled.div`
     @media (max-width: 768px) {
         margin: 9rem auto 0;
     }
+
+    @media (max-width: 480px) {
+        margin: 0 auto;
+    }
 `
 
 export const TextLine = styled.p`
@@ -91,5 +116,6 @@ export const TextLine = styled.p`
     }
 
     @media (max-width: 768px) {
+        font-size: 1.4rem
     }
 `

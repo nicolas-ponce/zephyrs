@@ -16,6 +16,9 @@ export const TitleDiv = styled.div`
     justify-content: center;
     align-items: center;
     margin: 3.2rem auto;
+
+    @media (max-width: 480px) {
+    }
 `
 
 
@@ -24,6 +27,11 @@ export const H1 = styled.h1`
 
     @media (max-width: 992px) {
         font-size: 8rem;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 6.8rem;
+        margin: -10rem auto .4rem;
     }
 `
 
@@ -37,6 +45,11 @@ export const SubtitleP = styled.p`
 export const InfoDiv = styled(TitleDiv)`
     width: 80%;
     text-align: center;
+
+    @media (max-width: 480px) {
+        width: 90%;
+        margin-bottom: 7.2rem;
+    }
 `
 
 export const H2 = styled.h2`
@@ -45,6 +58,10 @@ export const H2 = styled.h2`
 
     @media (max-width: 992px) {
         font-size: 2rem;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1.8rem;
     }
 `
 
@@ -55,5 +72,9 @@ export const Text = styled.p`
 
     @media (max-width: 992px) {
         font-size: 1.6rem;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1.4rem;
     }
 `
