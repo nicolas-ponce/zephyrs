@@ -13,7 +13,7 @@ export const ProductDiv = styled.div`
     flex-direction: column;
     justify-content: first baseline;
     align-items: center;
-    height: 64rem;
+    height: 58rem;
     border: 1px solid none;
     box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
@@ -57,8 +57,9 @@ export const Name = styled.h4`
 
 
 export const Description = styled.p`
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     width: 90%;
+    color: var(--light-gray);
 
     @media (max-width: 768px) {
         margin: 0 auto 0;

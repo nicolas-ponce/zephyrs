@@ -1,7 +1,7 @@
 import { NavBarLayout } from '../../layouts/NavBar_Layout/NavBarLayout'
 import { HeroLayout } from '../../layouts/Hero Sections/Hero-Layout/HeroLayout'
 import { MiniProductsLayout } from '../../layouts/Hero Sections/Mini-Products-Layout/MiniProductsLayout'
-import { ProductsLayout } from '../../layouts/Products_Layout/ProductsLayout'
+import { FeaturedProductsLayout } from '../../layouts/FeaturedProducts_Layout/FeaturedProductsLayout'
 import { HEADER, MAIN } from './HomeScreen.style'
 import { FAQLayout } from '../../layouts/FAQ_Layout/FAQLayout'
 import { AboutUsLayout } from '../../layouts/AboutUs_Layout/AboutUsLayout'
@@ -18,7 +18,7 @@ export const HomeScreen = () => {
       <HEADER>
         <NavBarLayout />
       </HEADER>
-        <ProductsLayout />
+        <FeaturedProductsLayout />
         <FAQLayout />
         <AboutUsLayout />
         <FooterLayout />

@@ -1,5 +1,5 @@
 import { MiniProductCard } from "../../../components/MiniProducts/MiniProductCard";
-import { watches } from "../../../data/watches";
+import { watches } from "../../../data/allWatches";
 import { DIV } from "./MiniProductsLayout.style";
 
 

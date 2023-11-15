@@ -1,13 +1,16 @@
+import { SeeAllProductsBtn } from "../../components/Buttons/SeeAllProducts_Button/SeeAllProductsBtn";
 import { ProductCard } from "../../components/Product/ProductCard";
-import { watches } from "../../data/watches";
-import { ProductGrid } from "./ProductsLayout.style";
+import { featuredWatches } from "../../data/featuredWatches";
+import { ProductGrid, Title } from "./FeaturedProductsLayout.style";
 
-export const ProductsLayout = () => {
+
+export const FeaturedProductsLayout = () => {
   return (
     <>
+        <Title>Productos destacados</Title>
         <ProductGrid>
         {
-            watches.map((watch) => (
+            featuredWatches.map((watch) => (
             <ProductCard
                 key={watch.id}
                 img={watch.img}
@@ -17,6 +20,7 @@ export const ProductsLayout = () => {
                 description={watch.description} />))
         }
         </ProductGrid>
+        <SeeAllProductsBtn />
     </>
   )
 }

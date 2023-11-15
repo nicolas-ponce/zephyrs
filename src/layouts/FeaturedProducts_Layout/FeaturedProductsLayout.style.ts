@@ -1,14 +1,18 @@
 import styled from "styled-components";
 
+export const Title = styled.h3`
+    text-align: center;
+`;
+
 export const ProductGrid = styled.div`
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 4.4rem;
-    width: 90%;
+    width: 75%;
     margin: 2.4rem auto;
 
     @media (max-width: 992px) {
-        grid-template-columns: repeat(3, 1fr);
+        width: 90%;
         gap: 2.8rem;
     }
 
