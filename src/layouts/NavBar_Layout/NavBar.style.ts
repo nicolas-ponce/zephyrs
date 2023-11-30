@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NavLink } from 'react-router-dom';
 
 export const NavBar = styled.nav`
     display: flex;
@@ -35,7 +36,7 @@ export const LinkList = styled.div`
     }
 `
 
-export const Anchor = styled.a`
+export const StyledNavLink = styled(NavLink)`
     display: inline-block;
     position: relative;
 

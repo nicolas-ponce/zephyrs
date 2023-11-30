@@ -1,5 +1,5 @@
 import { MiniProductCard } from "../../../components/MiniProducts/MiniProductCard";
-import { watches } from "../../../data/allWatches";
+import { allWatches } from "../../../data/allWatches";
 import { DIV } from "./MiniProductsLayout.style";
 
 
@@ -12,7 +12,7 @@ export const MiniProductsLayout = () => {
     <>
     <DIV>
     {
-        watches.map((watch) => (
+        allWatches.map((watch) => (
           <MiniProductCard
             key={watch.id}
             img={watch.img}

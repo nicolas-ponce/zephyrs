@@ -1,4 +1,4 @@
-export const watches = [
+export const allWatches = [
     {
         id: 1,
         name: "Native",

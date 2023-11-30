@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { NavLink } from 'react-router-dom';
 
-export const Anchor = styled.a`
+export const Anchor = styled(NavLink)`
     position: relative;
     display: flex;
     justify-content: center;

@@ -3,7 +3,7 @@ import { Anchor, ArrowIcon } from './SeeAllProductsBtn.style'
 
 export const SeeAllProductsBtn = () => {
   return (
-    <Anchor href='#'>
+    <Anchor to='/products'>
         See All Watches
         <ArrowIcon src={linkArrow}></ArrowIcon>
     </Anchor>

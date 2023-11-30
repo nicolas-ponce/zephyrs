@@ -1,15 +1,15 @@
-import { Anchor, H3, Hamburger, HamburguerLine, LinkList, NavBar } from './NavBar.style'
+import { H3, Hamburger, HamburguerLine, LinkList, NavBar, StyledNavLink } from './NavBar.style'
 
 export const NavBarLayout = () => {
   return (
     <NavBar>
         <H3>ZEPHYRS</H3>
         <LinkList>
-            <Anchor href='#'>Home</Anchor>
-            <Anchor href='#'>Products</Anchor>
-            <Anchor href='#'>FAQ</Anchor>
-            <Anchor href='#'>About Us</Anchor>
-            <Anchor href='#'>Contact</Anchor>
+            <StyledNavLink to='/'>Home</StyledNavLink>
+            <StyledNavLink to='/products'>Products</StyledNavLink>
+            <StyledNavLink to='/'>FAQ</StyledNavLink>
+            <StyledNavLink to='/about-us'>About Us</StyledNavLink>
+            <StyledNavLink to='/contact'>Contact</StyledNavLink>
         </LinkList>
         <Hamburger>
           <HamburguerLine />

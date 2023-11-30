@@ -1,12 +1,12 @@
 import './App.css'
-import { HomeScreen } from './screens/Home_Screen/Home_screen'
+import { Routes } from './routes/Routes'
 
 
 
 function App() {
   return (
     <>
-      <HomeScreen />
+      <Routes />
     </>
   )
 }
