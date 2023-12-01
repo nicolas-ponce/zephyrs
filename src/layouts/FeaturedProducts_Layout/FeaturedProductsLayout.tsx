@@ -7,7 +7,7 @@ import { ProductGrid, Title } from "./FeaturedProductsLayout.style";
 export const FeaturedProductsLayout = () => {
   return (
     <>
-        <Title>Productos destacados</Title>
+        <Title>Featured Products</Title>
         <ProductGrid>
         {
             featuredWatches.map((watch) => (
