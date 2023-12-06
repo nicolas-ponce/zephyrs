@@ -7,7 +7,7 @@ import { FAQLayout } from '../../layouts/FAQ_Layout/FAQLayout'
 import { FooterLayout } from '../../layouts/Footer_Layout/FooterLayout'
 
 
-export const Home_Screen = () => {
+export const HomeScreen = () => {
   return (
     <>
       <MAIN>
