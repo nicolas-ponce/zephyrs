@@ -6,6 +6,7 @@ export const NavBar = styled.nav`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: relative;
     width: 90%;
     margin: 0 auto;
     padding: 2rem 0;
@@ -32,7 +33,17 @@ export const LinkList = styled.div`
     }
 
     @media (max-width: 768px) {
-        display: none;
+        position: absolute;
+        flex-direction: column;
+        justify-content: space-evenly;
+        top: 10rem;
+        left: -10%;
+        right: 0;
+        margin: auto;
+        width: 120%;
+        height: 30rem;
+        background-color: var(--blue);
+        z-index: 10;
     }
 `
 
