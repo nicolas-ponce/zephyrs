@@ -13,6 +13,10 @@ export const Title = styled.h2`
     width: 100%;
     text-align: left;
     margin: 2.8rem;
+
+    @media (max-width: 768px) {
+        margin-bottom: 18rem;
+    }
 `;
 
 export const ImgAndDataContainer = styled.div`
@@ -23,9 +27,28 @@ export const ImgDiv = styled.div`
     display: flex;
     position: absolute;
     bottom: -22%;
-    right: -18%;
+    right: -5%;
     width: 50%;
     z-index: -10;
+
+    @media (max-width: 1200px) {
+        width: 40%;
+    }
+
+    @media (max-width: 992px) {
+        right: 0;
+        width: 45%;
+    }
+
+    @media (max-width: 768px) {
+        top: -15%;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        margin: 0 auto;
+        height: 20rem;
+    }
 `;
 
 export const LetterImg = styled.img`
@@ -52,6 +75,20 @@ export const ContactContainer = styled.div`
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(4px);
+
+    @media (max-width: 1200px) {
+        width: 80%;
+    }
+
+    @media (max-width: 992px) {
+        right: 0;
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        padding: 3.2rem;
+        gap: 3.2rem;
+    }
 `;
 
 export const Form = styled.form`
@@ -61,6 +98,18 @@ export const Form = styled.form`
     justify-content: center;
     align-items: center;
     gap: 1.2rem;
+
+    @media (max-width: 768px) {
+        grid-row: 2/3;
+
+        &::before {
+            content: '';
+            width: 80%;
+            height: 1px;
+            background-color: var(--brown);
+            margin-bottom: 2.4rem;
+        }
+    }
 `;
 
 export const InputBox = styled.div`
@@ -158,6 +207,10 @@ export const ContactData = styled.div`
     align-items: center;
     width: 100%;
     gap: 4rem;
+
+    @media (max-width: 768px) {
+        margin-top: 8rem;
+    }
 `;
 
 export const DataItem = styled.div`
