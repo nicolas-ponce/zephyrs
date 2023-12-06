@@ -25,7 +25,7 @@ export const NavBarLayout = () => {
             <StyledNavLink style={({ isActive }) => {return {color: isActive ? "var(--brown)" : ""}}} onClick={handleClick} to='/about-us'>About Us</StyledNavLink>
             <StyledNavLink style={({ isActive }) => {return {color: isActive ? "var(--brown)" : ""}}} onClick={handleClick} to='/contact'>Contact</StyledNavLink>
         </LinkList>
-        <Hamburger onClick={menuCtx.toggleMenu}>
+        <Hamburger onClick={menuCtx.toggleMenu} onTouchStart={menuCtx.toggleMenu}>
           <HamburguerLine />
           <HamburguerLine />
           <HamburguerLine />
