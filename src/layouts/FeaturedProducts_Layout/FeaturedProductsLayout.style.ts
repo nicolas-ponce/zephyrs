@@ -22,6 +22,8 @@ export const ProductGrid = styled.div`
     }
 
     @media (max-width: 480px) {
-        gap: 2rem;
+        grid-template-columns: 1fr;
+        gap: 4rem;
+        width: 70%;
     }
 `
