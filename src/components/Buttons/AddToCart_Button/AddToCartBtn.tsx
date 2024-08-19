@@ -1,11 +1,7 @@
-import { Button, ShoppingCartImg, Text } from './AddToCartBtn.style'
-import shoppingCart from '../../../assets/icons/shopping-cart.png'
+import { Button } from './AddToCartBtn.style'
 
 export const AddToCartBtn = () => {
   return (
-    <Button>
-        <ShoppingCartImg src={shoppingCart}></ShoppingCartImg>
-        <Text>Add To Cart</Text>
-    </Button>
+    <Button>Add to cart</Button>
   )
 }

@@ -189,12 +189,12 @@ export const SendButton = styled.button`
     outline: var(--blue) solid 1px;
     border: none;
     align-self: flex-end;
-    transition: all .1s;
+    transition: all .2s;
+    border-radius: .2rem;
 
     &:hover {
-        color: var(--brown);
-        background: var(--blue);
-        outline: var(--brown) solid 1px;
+        transition: all .2s;
+        background: var(--darkerBrown);
     }
 `;
 

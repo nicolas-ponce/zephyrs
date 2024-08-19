@@ -10,11 +10,19 @@ type Props = {
 }
 
 export const MiniProductCard = (props: Props) => {
+
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+  }
+
   return (
     <Card>
         <WatchImg src={props.img}></WatchImg>
         <WatchName>{props.name}</WatchName>
-        <SeeMoreBtn href="#">See More</SeeMoreBtn>
+        <SeeMoreBtn
+          onClick={handleClick}
+          to="/products"
+        >See More</SeeMoreBtn>
     </Card>
   )
 }

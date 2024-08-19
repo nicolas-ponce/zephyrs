@@ -1,6 +1,5 @@
 import { AddToCartBtn } from '../Buttons/AddToCart_Button/AddToCartBtn';
-import { SeeProductBtn } from '../Buttons/SeeProduct_Button/SeeProductBtn';
-import { Description, Name, Price, PriceNBtn, ProductDiv, ProductImg } from './ProductCard.style';
+import { CardInfo, Description, Name, Price, PriceNBtn, ProductDiv, ProductImg, ProductImgDiv } from './ProductCard.style';
 
 type Props = {
     id: number;
@@ -13,14 +12,19 @@ type Props = {
 export const ProductCard = (props: Props) => {
   return (
     <ProductDiv>
+      <ProductImgDiv>
         <ProductImg src={props.img}></ProductImg>
+      </ProductImgDiv>
+
+      <CardInfo>
         <Name>{props.name}</Name>
         <Description>{props.description}</Description>
-        <PriceNBtn>
-            <Price>US$ {props.price}</Price>
-            <SeeProductBtn />
-            <AddToCartBtn />
-        </PriceNBtn>
+      </CardInfo>
+
+      <PriceNBtn>
+          <Price>US$ {props.price}</Price>
+          <AddToCartBtn />
+      </PriceNBtn>
     </ProductDiv>
   )
 }

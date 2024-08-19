@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
 
 const NameUpAnimation = keyframes`
@@ -31,12 +32,12 @@ export const WatchName = styled.p`
     text-align: center;
 `
 
-export const SeeMoreBtn = styled.a`
+export const SeeMoreBtn = styled(NavLink)`
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    margin: 1.2rem auto;
+    margin: 0 auto;
     text-align: center;
     text-decoration: none;
     display: flex;
@@ -44,6 +45,26 @@ export const SeeMoreBtn = styled.a`
     font-size: 1.8rem;
     color: rgba(0,0,0,0);
     letter-spacing: .3rem;
+    padding: 1.2rem;
+
+    &::after {
+        content: '';
+        background-color: var(--white);
+        width: 0;
+        height: 1px;
+        transition: all .2s;
+        margin: auto;
+    }
+
+    &:hover {
+        &::after {
+        content: '';
+        background-color: var(--white);
+        width: 50%;
+        height: 1px;
+        transition: all .2s;
+    }
+    }
 `
 
 export const WatchImg = styled.img`
@@ -69,15 +90,16 @@ export const Card = styled.div`
     transition: all 0.2s;
 
     &:hover {
+        transition: all 0.2s;
         background: rgb(18, 18, 18);
         background: linear-gradient(0deg, rgba(18, 18, 18, 1) 0%, rgba(255, 255, 255, 0) 100%);
 
         & ${WatchName} {
-            animation: ${NameUpAnimation} .8s ease-in-out forwards;
+            animation: ${NameUpAnimation} .4s ease-in-out forwards;
         }
 
         & ${SeeMoreBtn} {
-            animation: ${AppearBtn} .8s .4s ease-in-out forwards;
+            animation: ${AppearBtn} .4s .2s ease-in-out forwards;
         }
 
         & ${WatchImg} {

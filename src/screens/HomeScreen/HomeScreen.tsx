@@ -18,7 +18,7 @@ export const HomeScreen = () => {
         <NavBarLayout />
       </HEADER>
         <FeaturedProductsLayout />
-        <FAQLayout />
+        <FAQLayout/>
         <FooterLayout />
     </>
 

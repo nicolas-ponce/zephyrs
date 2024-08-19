@@ -9,6 +9,7 @@ export const NavBarLayout = () => {
 
 
   const handleClick = () => {
+    window.scrollTo(0,0);
 
     if(screenWidth < 768) {
       menuCtx.toggleMenu;
@@ -19,11 +20,31 @@ export const NavBarLayout = () => {
     <NavBar>
         <H3>ZEPHYRS</H3>
         <LinkList style={{display: menuCtx.isMenuOpen || screenWidth > 768 ? 'flex' : 'none'}}>
-            <StyledNavLink style={({ isActive }) => {return {color: isActive ? "var(--brown)" : ""}}} onClick={handleClick} to='/'>Home</StyledNavLink>
-            <StyledNavLink style={({ isActive }) => {return {color: isActive ? "var(--brown)" : ""}}} onClick={handleClick} to='/products'>Products</StyledNavLink>
-            <StyledNavLink onClick={handleClick} to='/'>FAQ</StyledNavLink>
-            <StyledNavLink style={({ isActive }) => {return {color: isActive ? "var(--brown)" : ""}}} onClick={handleClick} to='/about-us'>About Us</StyledNavLink>
-            <StyledNavLink style={({ isActive }) => {return {color: isActive ? "var(--brown)" : ""}}} onClick={handleClick} to='/contact'>Contact</StyledNavLink>
+        
+            <StyledNavLink
+              style={({ isActive }) => {return {color: isActive ? "var(--brown)" : ""}}}
+              onClick={handleClick}
+              to='/'
+            >Home</StyledNavLink>
+
+            <StyledNavLink
+              style={({ isActive }) => {return {color: isActive ? "var(--brown)" : ""}}}
+              onClick={handleClick}
+              to='/products'
+            >Products</StyledNavLink>
+
+            <StyledNavLink
+              style={({ isActive }) => {return {color: isActive ? "var(--brown)" : ""}}}
+              onClick={handleClick}
+              to='/about-us'
+            >About Us</StyledNavLink>
+
+            <StyledNavLink
+              style={({ isActive }) => {return {color: isActive ? "var(--brown)" : ""}}}
+              onClick={handleClick}
+              to='/contact'
+            >Contact</StyledNavLink>
+
         </LinkList>
         <Hamburger onClick={menuCtx.toggleMenu}>
           <HamburguerLine />
